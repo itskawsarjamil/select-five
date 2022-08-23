@@ -35,7 +35,7 @@
     </header>
 
     <main>
-        <section class="container row mt-5 mx-auto">
+        <section class="container row mt-5 mb-5 mx-auto">
             <!-- player card -->
             <section class="col-9">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -50,7 +50,8 @@
                                     <p>120 Assist</p>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-primary mx-5 mb-2 rounded-0">Select</button>
+                            <button type="button" class="btn btn-primary mx-5 mb-2 rounded-0 "
+                                onclick="addToCart(this)">Select</button>
                         </div>
                     </div>
                     <div class="col">
@@ -64,7 +65,8 @@
                                     <p>120 Assist</p>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-primary mx-5 mb-2 rounded-0">Select</button>
+                            <button type="button" class="btn btn-primary mx-5 mb-2 rounded-0 "
+                                onclick="addToCart(this)">Select</button>
                         </div>
                     </div>
                     <div class="col">
@@ -78,7 +80,8 @@
                                     <p>120 Assist</p>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-primary mx-5 mb-2 rounded-0">Select</button>
+                            <button type="button" class="btn btn-primary mx-5 mb-2 rounded-0 "
+                                onclick="addToCart(this)">Select</button>
                         </div>
                     </div>
                     <div class="col">
@@ -92,7 +95,8 @@
                                     <p>120 Assist</p>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-primary mx-5 mb-2 rounded-0">Select</button>
+                            <button type="button" class="btn btn-primary mx-5 mb-2 rounded-0 "
+                                onclick="addToCart(this)">Select</button>
                         </div>
                     </div>
                     <div class="col">
@@ -106,7 +110,8 @@
                                     <p>120 Assist</p>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-primary mx-5 mb-2 rounded-0">Select</button>
+                            <button type="button" class="btn btn-primary mx-5 mb-2 rounded-0 "
+                                onclick="addToCart(this)">Select</button>
                         </div>
                     </div>
                     <div class="col">
@@ -120,56 +125,143 @@
                                     <p>120 Assist</p>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-primary mx-5 mb-2 rounded-0">Select</button>
+                            <button type="button" class="btn btn-primary mx-5 mb-2 rounded-0 "
+                                onclick="addToCart(this)">Select</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 bg-black">
+                            <img src="images/cristiano-ronaldo.webp" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center ">
+                                <h4 class="card-title text-white">Cristiano Ronaldo</h4>
+                                <div class="d-flex flex-row text-white-50 ">
+                                    <p>36 Goals</p>
+                                    <p>.</p>
+                                    <p>120 Assist</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary mx-5 mb-2 rounded-0 "
+                                onclick="addToCart(this)">Select</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 bg-black">
+                            <img src="https://img.a.transfermarkt.technology/portrait/big/148455-1546611604.jpg?lm=1"
+                                class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center ">
+                                <h4 class="card-title text-white">Roberto Firmino</h4>
+                                <div class="d-flex flex-row text-white-50 ">
+                                    <p>36 Goals</p>
+                                    <p>.</p>
+                                    <p>120 Assist</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary mx-5 mb-2 rounded-0 "
+                                onclick="addToCart(this)">Select</button>
                         </div>
                     </div>
 
+                    <div class="col">
+                        <div class="card h-100 bg-black">
+                            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHKTu1Jd0ugN9qOPg2-j81sFX6LlzpeSiLe3DK7mocDPbv2BOg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center ">
+                                <h4 class="card-title text-white">Mohamed Salah</h4>
+                                <div class="d-flex flex-row text-white-50 ">
+                                    <p>36 Goals</p>
+                                    <p>.</p>
+                                    <p>120 Assist</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary mx-5 mb-2 rounded-0 "
+                                onclick="addToCart(this)">Select</button>
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- selection details -->
             <section class="col-3 ">
-                <div class="row bg-black container h-50 d-flex flex-column align-items-center">
+                <div class="row bg-black container h-25 d-flex flex-column align-items-center pt-3">
                     <div class="container text-center">
                         <h3 class="text-white">Selected-V</h3>
                         <img src="images/Ureg-Ureg-Marker.png" alt="" class="">
                     </div>
                     <!-- selected player -->
                     <div>
-                       
+
                         <table class="table text-white border border-0 border-dark">
-                            <!-- <thead>
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                              </tr>
-                            </thead> -->
-                            <tbody>
-                              <tr id="">
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                              </tr>
+                            
+                            <tbody id="players-cart">
+                                <!-- <tr id="">
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                </tr> -->
                             </tbody>
-                          </table>
+                        </table>
                     </div>
                 </div>
-                <div class="row bg-black container h-50 d-flex flex-column align-items-center">
+                <div class="row bg-black container d-flex flex-column align-items-center mt-4 pt-3">
                     <div class="container text-center">
-                        <h3 class="text-white">Selected-V</h3>
+                        <h3 class="text-white">Budget</h3>
                         <img src="images/Ureg-Ureg-Marker.png" alt="" class="">
                     </div>
                     <!-- Calculation -->
-                    <div>
-                        
+                    <div class="container bg-black text-white-50 d-flex justify-content-around mt-4 text-center">
+                        <p class="d-flex text-align-center justify-content-center">
+                            Per Player
+                        </p>
+                        <input type="number" name="" id="per-player-price" class="w-50 bg-black border border-white text-white">
+                    </div>
+                    <button type="button" class="btn btn-primary mt-3 rounded-0" id="calculate-btn">Calculate</button>
+                    <div class="container bg-black text-white-50 d-flex justify-content-around mt-2 text-center">
+                        <p>
+                            Player Expenses
+                        </p>
+                        <p class="d-flex text-align-center justify-content-center text-white" >
+                            $<span id="player-expanses">5000</span>
+                        </p>
+
+                    </div>
+                    <div class="container bg-black text-white-50 d-flex justify-content-around mt-2 text-center">
+                        <p class="d-flex text-align-center justify-content-center">
+                            Manager
+                        </p>
+                        <input type="number" name="" id="manager-price" class="w-50 bg-black border border-white text-white">
+                    </div>
+                    <div class="container bg-black text-white-50 d-flex justify-content-around mt-4 text-center">
+                        <p class="d-flex text-align-center justify-content-center">
+                            Coach
+                        </p>
+                        <input type="number" name="" id="coach-price" class="w-50 bg-black border border-white text-white">
+                    </div>
+                    <button type="button" class="btn btn-primary mt-3 rounded-0" id="calculate-total-btn">Calculate Total</button>
+                    <div class="container bg-black text-white-50 d-flex justify-content-around mt-2 text-center">
+                        <p>
+                            Total
+                        </p>
+                        <p class="d-flex text-align-center justify-content-center heading-text-color">
+                            $<span id="total-waste">11000</span>
+                        </p>
+
                     </div>
                 </div>
             </section>
         </section>
+
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 
 </body>
+
+<footer class="container-fluid text-center h-100">
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <p>
+        Copyright @ 2022 All Rights Reserved.
+    </p>
+</footer>
 
 </html>
