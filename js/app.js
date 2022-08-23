@@ -17,20 +17,27 @@ function displayPlayerName() {
     }
 
 }
+let count=0;
 // this will organize player selection
 function addToCart(element) {
+    count++;
     const pdName = element.parentNode.children[1].children[0].innerText;
 
     const pd = {
         pdName: pdName,
     }
-    
+    if(count>=6)
+    {
+        alert("You already selected your Five Player!!!Koyda lage");
+        return;
+    }
     if (cart.length < 5) {
 
         cart.push(pd);
         element.style.background = '#000000';
         element.disabled = true;
     }
+    
     displayPlayerName();
 }
 
