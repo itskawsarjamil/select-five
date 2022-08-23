@@ -1,5 +1,8 @@
 const cart = [];
+// for total money spend calculation this variable
 let totalplayerexpanse=0;
+
+// this function will display player name to selected-v
 function displayPlayerName() {
     const cartContainer = document.getElementById("players-cart");
     cartContainer.textContent = '';
@@ -14,7 +17,7 @@ function displayPlayerName() {
     }
 
 }
-
+// this will organize player selection
 function addToCart(element) {
     const pdName = element.parentNode.children[1].children[0].innerText;
 
@@ -28,11 +31,10 @@ function addToCart(element) {
         element.style.background = '#000000';
         element.disabled = true;
     }
-    
-
     displayPlayerName();
 }
 
+//this will execute after calcute button pressed
 document.getElementById('calculate-btn').addEventListener('click',function(){
     const perPlayerPriceString=document.getElementById('per-player-price').value;
     const perPlayerPrice=parseFloat(perPlayerPriceString);
@@ -43,6 +45,8 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
     playerExpanses.innerText=(totalPlayer*perPlayerPrice);
     
 })
+
+// this will execute after calculate total button pressed
 document.getElementById('calculate-total-btn').addEventListener('click',function(){
     const managerPriceString=document.getElementById('manager-price').value;
     const managerPrice=parseFloat(managerPriceString);
